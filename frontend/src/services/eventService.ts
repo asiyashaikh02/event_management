@@ -1,7 +1,7 @@
 import { Event, EventFormData } from '../types';
 
 const API_URL = import.meta.env.VITE_API_URL || 'http://localhost:5000/api/events';
-
+fetch(API_URL)
 export const eventService = {
   // Get all events
   async getAllEvents(): Promise<Event[]> {
